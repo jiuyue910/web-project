@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+.sticky {
+    position: sticky;
+    top: 0;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+}
+
+.timetable-cell {
+    height: 4.6rem;
+    border-radius: 0.85rem;
+    border-width: 1px;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.15s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-user-active {
+    background-color: #fff7ed;
+    border-color: #f97316;
+    color: #c2410c;
+    font-weight: 700;
+}
+
+.btn-user-inactive {
+    border-color: #e5e7eb;
+    color: #4b5563;
+}
+
+.btn-user-inactive:hover {
+    background-color: #f9fafb;
+}
+
+.dark body {
+    background-color: #0f172a;
+}
+
+.dark .btn-user-active {
+    background-color: #7c2d12;
+    border-color: #ea580c;
+    color: #ffedd5;
+}
+
+.dark .btn-user-inactive {
+    border-color: #334155;
+    color: #cbd5e1;
+    background-color: #1e293b;
+}
+
+.dark .btn-user-inactive:hover {
+    background-color: #334155;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 999px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+    background: #475569;
+}
